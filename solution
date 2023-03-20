@@ -1,4 +1,8 @@
+# №1
 
+SELECT email FROM Staff
+GROUP BY email
+HAVING COUNT(email) > 1
 
 # №3
 
