@@ -4,10 +4,13 @@ SELECT email FROM Staff
 GROUP BY email
 HAVING COUNT(email) > 1
 
+# №2
+
+SELECT trunc(sysdate - birthday, 'YEAR') FROM Staff
+
 # №3
 
 SELECT Jobtitles.Name FROM Staff
 INNER JOIN Jobtitles ON Jobtitles.jobtitle_id = Staff.jobtitle_id
 ORDER BY CAST(Staff.salary AS INT) DESC
 LIMIT 1, 1
-
