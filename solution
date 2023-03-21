@@ -14,3 +14,4 @@ SELECT Jobtitles.Name FROM Staff
 INNER JOIN Jobtitles ON Jobtitles.jobtitle_id = Staff.jobtitle_id
 ORDER BY CAST(Staff.salary AS INT) DESC
 LIMIT 1, 1
+
